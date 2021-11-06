@@ -3,6 +3,7 @@ package utilities;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,9 +14,11 @@ import org.testng.Assert;
 import io.restassured.response.Response;
 
 public class GenericUtility {
+	static FileWriter fileWriter = null;
     public static String getConfigData(String key) {
         Properties objProperties = new Properties();
         FileReader objFileReader = null;
+        
         try {
             objFileReader = new FileReader(new File(System.getProperty("user.dir") + File.separator + "src" + File.separator + "test" + File.separator + "java" + File.separator + "config.properties"));
         } catch (FileNotFoundException e) {
@@ -93,4 +96,24 @@ public class GenericUtility {
     	}
     }
     
+    public static void writeJsonFile(String fileName,String filepath, String jsonString) throws IOException
+    {
+    	try {
+    	fileWriter = new FileWriter(filepath + File.separator + fileName+".json");
+    	fileWriter.write(jsonString);
+    	System.out.println("File copied");
+    	} catch (IOException e) {
+            e.printStackTrace();
+ 
+        } finally {
+ 
+            try {
+            	fileWriter.flush();
+                fileWriter.close();
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+    }
 }

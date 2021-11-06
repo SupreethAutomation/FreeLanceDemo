@@ -5,6 +5,7 @@ Feature: Login Feature
     Given the api is successfully running
       |api/login|
     When the user authenticates with the credentials "<email>" and "<password>"
+    |login.json|
     Then Validate that the response is valid and token "<token>" is generated succesfully
     But Validate that the response is Invalid and proper error message "<msg>" is generated succesfully 
     Examples:

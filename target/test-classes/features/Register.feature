@@ -5,6 +5,7 @@ Feature: Register Feature
     Given the api is successfully running
       |api/register|
     When user registers with the email "<email>" and password "<password>"
+    |register.json|
     Then Validate that the response is valid and token "<token>" is generated succesfully
     And verify the employee id "<id>"
     But Validate that the response is Invalid and proper error message "<msg>" is generated succesfully

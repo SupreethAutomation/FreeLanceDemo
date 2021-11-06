@@ -5,6 +5,7 @@
     Given the api is successfully running
       | api/users |
     When the admin patches the user "<employeeId>" , "<name>" and "<job>" details
+    |CreateUser.json|
     Then Validate that the response is valid and "<name>" and "<job>" details are updated succesfully
 Examples:
 |employeeId|name|job|

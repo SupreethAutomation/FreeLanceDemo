@@ -1,0 +1,12 @@
+stepDefinitions\LoginStepDefinition.class
+stepDefinitions\RegistrationStepDefinition.class
+stepDefinitions\SearchUserStepDefinition.class
+stepDefinitions\TestStepDefinition.class
+responseJsonPaths\ResponseJsonPaths.class
+cucumber\Runner\TestRunner.class
+utilities\GenericUtility.class
+responseJsonPaths\RequestJsonKeys.class
+stepDefinitions\PatchUserStepDefinition.class
+stepDefinitions\BaseStepDefinition.class
+stepDefinitions\UpdateUserStepDefinition.class
+stepDefinitions\CreateUserStepDefinition.class

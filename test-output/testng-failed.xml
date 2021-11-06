@@ -6,6 +6,7 @@
       <class name="cucumber.Runner.TestRunner">
         <methods>
           <include name="setUpClass"/>
+          <include name="beforeSuite"/>
           <include name="feature" invocation-numbers="3"/>
           <include name="tearDownClass"/>
         </methods>

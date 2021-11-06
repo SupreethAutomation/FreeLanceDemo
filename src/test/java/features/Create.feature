@@ -5,6 +5,7 @@ Feature: Create User Feature
     Given the api is successfully running
       |api/users|
     When the user creates new Users with "<user>" and "<job>"
+    |CreateUser.json|
     Then Validate that the response is valid and new user with "<user>" and "<job>" is created succesfully
  
   Examples:
