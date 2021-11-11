@@ -11,6 +11,7 @@ import java.util.Properties;
 
 import org.testng.Assert;
 
+import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 public class GenericUtility {
@@ -116,4 +117,10 @@ public class GenericUtility {
             }
         }
     }
+    
+    public static boolean verifyTheStatusCodeOfAPIService()
+    {
+		return RestAssured.get().statusCode() >= 200 || RestAssured.get().statusCode() <= 206;
+    }
+    
 }

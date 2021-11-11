@@ -18,7 +18,7 @@ public class BaseStepDefinition implements ResponseJsonPaths {
 		RestAssured.basePath = data.raw().get(0).get(0);
 		try
 		{
-			Assert.assertTrue(RestAssured.get().statusCode() >= 200 || RestAssured.get().statusCode() <= 206, "API not running");
+			Assert.assertTrue(GenericUtility.verifyTheStatusCodeOfAPIService(), "API not running");
 		}
 		catch (Exception e) {
 			Assert.assertTrue(false,"API is down");

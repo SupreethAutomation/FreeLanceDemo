@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Dell\AppData\Local\Temp\testng-eclipse--787756664\testng-customsuite.xml</span>
+                    <span>C:\Users\Dell\AppData\Local\Temp\testng-eclipse--1939273956\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -116,6 +116,11 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="cucumber.Runner.TestRunner" hash-for-method="feature(Update User Feature)">feature(Update User Feature)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="cucumber.Runner.TestRunner" hash-for-method="feature(Login Feature)">feature(Login Feature)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -126,17 +131,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="cucumber.Runner.TestRunner" hash-for-method="feature(Register Feature)">feature(Register Feature)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="cucumber.Runner.TestRunner" hash-for-method="feature(Create User Feature)">feature(Create User Feature)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="cucumber.Runner.TestRunner" hash-for-method="feature(Update User Feature)">feature(Update User Feature)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="cucumber.Runner.TestRunner" hash-for-method="feature(Register Feature)">feature(Register Feature)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -195,7 +195,7 @@ Caused by: java.lang.AssertionError: Value is invalid expected [true] but found 
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertTrue(Assert.java:42)
-	at utilities.GenericUtility.assertResultisPositive(GenericUtility.java:70)
+	at utilities.GenericUtility.assertResultisPositive(GenericUtility.java:71)
 	at stepDefinitions.SearchUserStepDefinition.validate_that_the_response_is_valid_and_and_is_searched_successfully(SearchUserStepDefinition.java:27)
 	at ✽.Then Validate that the response is valid and &quot;18&quot; and &quot;tobias.funke@reqres.in$Tobias$Funke$https://reqres.in/img/faces/9-image.jpg$https://reqres.in/#support-heading$To keep ReqRes free, contributions towards server costs are appreciated!&quot; is searched successfully(SearchUser.feature:8)
 
@@ -212,6 +212,16 @@ Caused by: java.lang.AssertionError: Value is invalid expected [true] but found 
               <span class="class-name">cucumber.Runner.TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Update User Feature)">
+                  </a> <!-- feature(Update User Feature) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Update User Feature)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="feature(Login Feature)">
@@ -234,16 +244,6 @@ Caused by: java.lang.AssertionError: Value is invalid expected [true] but found 
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Register Feature)">
-                  </a> <!-- feature(Register Feature) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(Register Feature)</span>
-                  <em>
-(Runs Cucumber Feature)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="feature(Create User Feature)">
                   </a> <!-- feature(Create User Feature) -->
                   <span class="method-name">feature</span>
@@ -254,10 +254,10 @@ Caused by: java.lang.AssertionError: Value is invalid expected [true] but found 
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Update User Feature)">
-                  </a> <!-- feature(Update User Feature) -->
+                  <a name="feature(Register Feature)">
+                  </a> <!-- feature(Register Feature) -->
                   <span class="method-name">feature</span>
-                  <span class="parameters">(Update User Feature)</span>
+                  <span class="parameters">(Register Feature)</span>
                   <em>
 (Runs Cucumber Feature)                  </em>
                 </div> <!-- method-content -->
@@ -267,7 +267,7 @@ Caused by: java.lang.AssertionError: Value is invalid expected [true] but found 
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Dell\AppData\Local\Temp\testng-eclipse--787756664\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Dell\AppData\Local\Temp\testng-eclipse--1939273956\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -328,32 +328,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'cucumber.Runner.TestRunner')
-data.setCell(0, 3, 9771);
+data.setCell(0, 3, 29261);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'feature')
 data.setCell(1, 2, 'cucumber.Runner.TestRunner')
-data.setCell(1, 3, 3553);
+data.setCell(1, 3, 26235);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'feature')
 data.setCell(2, 2, 'cucumber.Runner.TestRunner')
-data.setCell(2, 3, 3406);
+data.setCell(2, 3, 22077);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'feature')
 data.setCell(3, 2, 'cucumber.Runner.TestRunner')
-data.setCell(3, 3, 2836);
+data.setCell(3, 3, 19761);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'feature')
 data.setCell(4, 2, 'cucumber.Runner.TestRunner')
-data.setCell(4, 3, 2082);
+data.setCell(4, 3, 14381);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'feature')
 data.setCell(5, 2, 'cucumber.Runner.TestRunner')
-data.setCell(5, 3, 1906);
+data.setCell(5, 3, 10069);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -386,37 +386,37 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">59 ms</span>
+                <span class="method-start">175 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">feature(Create User Feature)</span>
-                <span class="method-start">605 ms</span>
+                <span class="method-start">977 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">feature(Patch user data)</span>
-                <span class="method-start">10391 ms</span>
+                <span class="method-start">30243 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">feature(Register Feature)</span>
-                <span class="method-start">12475 ms</span>
+                <span class="method-start">40314 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(Search User Feature)</span>
-                <span class="method-start">16030 ms</span>
+                <span class="method-start">60079 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">feature(Update User Feature)</span>
-                <span class="method-start">19441 ms</span>
+                <span class="method-start">86317 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">feature(Login Feature)</span>
-                <span class="method-start">21349 ms</span>
+                <span class="method-start">100700 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">24187 ms</span>
+                <span class="method-start">122784 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
